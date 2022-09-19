@@ -1,0 +1,23 @@
+@import "./_layout.scss";
+
+// Tablet
+@media (min-width: 30em) {
+  .intro {
+    .intro-wrapper {
+      width: 70vw;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+
+  .landing-menu {
+      gap: 5vh !important;
+      margin: 5vh auto;
+
+      button {
+          width: 70vw;
+      }
+  }
+}

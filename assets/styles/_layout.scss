@@ -1,0 +1,258 @@
+// Colours
+$main-blue: #0bbce7;
+$main-pink: #fe7890;
+$main-white: #f2f2f2;
+$main-grey: #343538;
+$dark-blue: #076379;
+$light-blue: #b3daf2;
+
+// Button mixins
+@mixin main-button-style {
+  background-color: $main-pink;
+  color: $main-white;
+  border-radius: 10px;
+}
+
+@mixin secondary-button-style {
+  background-color: $main-white;
+  color: $main-pink;
+  outline: 1px solid $main-pink;
+}
+
+// Link mixins
+@mixin link-hover {
+  color: $main-pink;
+}
+
+// Important content
+@mixin important-content {
+  background-color: $dark-blue;
+  color: $main-white;
+}
+
+// Images
+@mixin basic-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+// GLOBAL THINGZ
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $main-white;
+}
+
+a {
+  text-transform: capitalize;
+}
+
+p {
+  color: $main-grey;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+h2 {
+  color: $main-pink;
+}
+
+button {
+  @include main-button-style;
+  border: none;
+  border-radius: 10px;
+}
+
+img {
+  @include basic-image;
+}
+
+// START OF STYLES
+
+// Global Header
+.header {
+  width: 100%;
+  background-color: $main-blue;
+  position: fixed;
+
+  .header-wrapper {
+    width: 80px;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+}
+
+// Footer for the Ordering page
+.footer-shop {
+  width: 100%;
+  background-color: $main-blue;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  a {
+    color: $main-white;
+  }
+
+  .footer-shop-child:first-child {
+    flex: 1;
+  }
+
+  .footer-shop-child:nth-child(2) {
+    .cart-wrapper {
+      width: 30px;
+    }
+  }
+
+  .footer-shop-child:nth-child(2), .footer-shop-child:nth-child(2) a,
+  .footer-shop-child:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include main-button-style;
+    padding: 5px;
+    flex: 3;
+    text-align: center;
+    height: 50px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// Loading page
+.loading {
+  background-color: $main-pink !important;
+  text-align: center;
+  height: 100%;
+
+  .loading-inner {
+    background-color: $main-blue;
+    width: 90vw;
+    height: 90vh;
+    margin: 5% auto;
+  }
+
+  .loading-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .loading-logo-wrapper {
+    margin: 20px auto;
+    width: 70%;
+  }
+
+  h3 {
+    margin: 10px 0;
+  }
+
+  h2 {
+    color: $main-white;
+  }
+
+  a {
+    color: $main-white;
+    text-decoration: none;
+  }
+}
+
+// Landing page
+.intro {
+  height: 35vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/exterior-photo.png");
+  background-size: cover;
+  background-position: 90% center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+
+  .intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 15px;
+    margin-bottom: 10px;
+
+    p {
+      color: $main-white;
+      font-size: 12px;
+    }
+  }
+}
+
+.landing-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 3vh auto;
+  align-items: center;
+  gap: 3vh;
+  justify-content: center;
+  height: 100%;
+
+  button {
+    width: 90vw;
+  }
+
+  .landing-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .landing-img-wrapper {
+    flex: 1;
+    height: 100%;
+    max-width: 50px;
+  }
+
+  .landing-txt-wrapper {
+    flex: 2;
+  }
+
+  a {
+    color: $main-white;
+    text-decoration: none;
+  }
+
+  h2 {
+    color: $main-white;
+  }
+
+  h4 {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
