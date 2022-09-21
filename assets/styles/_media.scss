@@ -1,5 +1,11 @@
 // Tablet
 @media (min-width: 30em) {
+.footer-shop {
+    .footer-shop-child:first-child {
+        text-align: center;
+    }
+}
+
   .intro {
     .intro-wrapper {
       width: 70vw;
@@ -32,4 +38,16 @@
       height: 180px;
     }
   }
+
+  .selected-page, .selected-options, .special-instructions, .common-pairings-section, .add-cart {
+    margin: 20px 30px;
 }
+
+.add-cart {
+    margin-bottom: 70px;
+}
+
+// end tag of media query
+}
+
+
