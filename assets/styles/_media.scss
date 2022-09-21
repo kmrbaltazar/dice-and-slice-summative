@@ -1,5 +1,3 @@
-@import "./_layout.scss";
-
 // Tablet
 @media (min-width: 30em) {
   .intro {
@@ -13,11 +11,25 @@
   }
 
   .landing-menu {
-      gap: 5vh !important;
-      margin: 5vh auto;
+    gap: 5vh;
+    margin: 5vh auto;
 
-      button {
-          width: 70vw;
-      }
+    button {
+      width: 70vw;
+    }
+  }
+
+  .title-left {
+    margin: 20px 30px;
+  }
+
+  .menu-card a {
+    padding: 0 30px;
+  }
+
+  .menu-card {
+    .menu-img-wrapper {
+      height: 180px;
+    }
   }
 }

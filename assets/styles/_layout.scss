@@ -161,6 +161,7 @@ img {
     width: 90vw;
     height: 90vh;
     margin: 5% auto;
+    border-radius: 10px;
   }
 
   .loading-content {
@@ -177,6 +178,7 @@ img {
 
   h3 {
     margin: 10px 0;
+    color: $main-white;
   }
 
   h2 {
@@ -276,9 +278,9 @@ img {
     a {
         display: inline-block;
         text-align: center;
-        padding: 10px 15px;
+        padding: 15px 15px;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         color: $dark-blue;
     }
 }
@@ -299,7 +301,6 @@ img {
     display: flex;
     text-align: left !important;
     margin: 10px auto;
-    border-bottom: 1px solid $main-blue;
     padding: 10px;
     gap: 10px;
     justify-content: center;
@@ -310,6 +311,7 @@ img {
 }
 
 .menu-card {
+    border-bottom: 1px dotted $main-blue;
 
     p {
         font-style: italic;
@@ -333,5 +335,9 @@ img {
         flex: 1;
     }
 }
+
+
+
+@import './media.scss';
 
 
