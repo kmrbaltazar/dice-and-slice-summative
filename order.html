@@ -39,22 +39,1236 @@
     />
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
     <script>
-        $(function(){
-            $('#header-loader').load('./header.html');
-            $('#footer-shop-loader').load('./footer-shop.html');
-        }
-        );
+      $(function () {
+        $("#header-loader").load("./header.html");
+        $("#footer-shop-loader").load("./footer-shop.html");
+      });
     </script>
     <title>Order Food and Drinks - Dice & Slice</title>
   </head>
   <body>
-      <!-- HEADER -->
-      <div id="header-loader"></div>
+    <!-- HEADER -->
+    <div id="header-loader"></div>
 
-    
+    <!-- MAIN -->
+    <section class="page-title-section">
+      <h2>order food/drinks</h2>
+      <h5 lang="mi">tono kai me nga inu</h5>
+    </section>
+    <section class="pizza-pic">
+      <img
+        src="./assets/images/pizza-pixel.png"
+        alt="Picture of Pixelated pizza"
+      />
+    </section>
+    <!-- <section class="page-description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ea provident facere. </p>
+      </section> -->
+    <section class="scroll-menu">
+      <a href="./order.html#bestsellers" class="link-white">crowd favourites</a>
+      <a href="./order.html#pizza" class="link-white">pizza</a>
+      <a href="./order.html#sides" class="link-white">sides</a>
+      <a href="./order.html#desserts" class="link-white">desserts</a>
+      <a href="./order.html#red-wine" class="link-white">red wine</a>
+      <a href="./order.html#white-wine" class="link-white">white wine</a>
+      <a href="./order.html#bubbles" class="link-white">bubbles</a>
+      <a href="./order.html#beer-cider" class="link-white">beer & cider</a>
+      <a href="./order.html#cocktails" class="link-white">cocktails</a>
+      <a href="./order.html#mocktails" class="link-white">mocktails</a>
+      <a href="./order.html#soda" class="link-white">soda</a>
+      <a href="./order.html#juices" class="link-white">juices</a>
+      <a href="./order.html#coffee" class="link-white">coffee</a>
+      <a href="./order.html#iced-drinks" class="link-white">iced drinks</a>
+      <a href="./order.html#tea" class="link-white">tea</a>
+    </section>
+    <!-- CROWD FAVORITES -->
+    <div class="title-left" id="bestsellers">
+      <h3>crowd favourites</h3>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>classic pepperoni slice</strong></h5>
+          <p>NY style pizza, house made sauce, mozzarella, pepperoni</p>
+          <h5><strong>$10.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/pizza01.png"
+              alt="Picture of Pizza Slice"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>classic hawaiian slice</strong></h5>
+          <p>NY style pizza, house made sauce, mozzarella, ham, pineapple</p>
+          <h5><strong>$11.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/pizza3.png"
+              alt="Picture of Pizza Slice"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>vegan margherita slice</strong></h5>
+          <p>NY style pizza, house made sauce, vegan mozzarella, olives</p>
+          <h5><strong>$11.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/pepperoni.png"
+              alt="Picture of Pizza Slice"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- PIZZAS -->
+    <div class="title-left" id="pizza">
+      <h3>Pizza by the Slice</h3>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>classic cheese slice</strong></h5>
+          <p>NY style pizza, house made sauce, mozzarella</p>
+          <h5><strong>$8.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/pizza01.png"
+              alt="Picture of Pizza Slice"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>Gluten Free cheese slice</strong></h5>
+          <p>NY style pizza, GF dough base, house made sauce, mozzarella</p>
+          <h5><strong>$11.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/pizza3.png"
+              alt="Picture of Pizza Slice"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>Gluten Free and Vegan cheese slice</strong></h5>
+          <p>
+            NY style pizza, GF dough base, house made sauce, vegan mozzarella
+          </p>
+          <h5><strong>$12.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/pizza3.png"
+              alt="Picture of Pizza Slice"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Sides -->
+    <div class="title-left" id="sides">
+      <h3>Sides</h3>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>shoestring chips</strong></h5>
+          <p>with tomato sauce and aioli<br />Vegan, GF</p>
+          <h5><strong>$8.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img src="./assets/images/fries.png" alt="Picture of Fries" />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>tater tots</strong></h5>
+          <p>with sour cream and sweet chilli<br />GF, Vegan on request</p>
+          <h5><strong>$9.50</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/tater-tot.png"
+              alt="Picture of Tater Tots"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Desserts -->
+    <div class="title-left" id="desserts">
+      <h3>desserts</h3>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>chocolate chunk cheesecake</strong></h5>
+          <p>Vegan</p>
+          <h5><strong>$12.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/cheesecake.png"
+              alt="Picture of Cheesecake"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>double chocolate brownie</strong></h5>
+          <p>
+            served with vanilla ice cream and house made berry compote<br />GF
+          </p>
+          <h5><strong>$10.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/brownie.png"
+              alt="Picture of Brownies with Vanilla Ice Cream"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>port</strong></h5>
+          <p>Ramos Pinto Tawny Port - 75ml</p>
+          <h5><strong>$8.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img src="./assets/images/port.png" alt="Picture of Port Wine" />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="menu-card">
+      <a href="#">
+        <div class="menu-card-child">
+          <h5><strong>apple crumble</strong></h5>
+          <p>served with warm custard</p>
+          <h5><strong>$12.00</strong></h5>
+        </div>
+        <div class="menu-card-child">
+          <div class="menu-img-wrapper">
+            <img
+              src="./assets/images/apple-crumble.png"
+              alt="Picture of Apple Crumble"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Drinks -->
+    <div class="title-left">
+      <h2>Drinks</h2>
+    </div>
+    <!-- Red wine -->
+    <div class="title-left" id="red-wine">
+        <h3>red wine</h3>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>deliverance pinot noir</strong></h5>
+            <p>Waipara</p>
+            <h5><strong>$12.00 - glass<br>$60 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/red-wine.png"
+                alt="Picture of red wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>man o' war island blend</strong></h5>
+            <p>Cabernet Franc, Merlot<br>Waiheke</p>
+            <h5><strong>$13.00 - glass<br>$56 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/red-wine.png"
+                alt="Picture of red wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>melton estate syrah</strong></h5>
+            <p>Canterbury</p>
+            <h5><strong>$13.00 - glass<br>$60 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/red-wine.png"
+                alt="Picture of red wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>amisfield pinot noir</strong></h5>
+            <p>Central Otago</p>
+            <h5><strong>$95 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/red-wine.png"
+                alt="Picture of red wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- White wine -->
+      <div class="title-left" id="white-wine">
+        <h3>white wine</h3>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>catalina sauvignon blanc</strong></h5>
+            <p>Marlborough</p>
+            <h5><strong>$12.00 - glass<br>$55 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/white-wine.png"
+                alt="Picture of white wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>dicey pinot gris</strong></h5>
+            <p>Central Otago<br>Waiheke</p>
+            <h5><strong>$13.00 - glass<br>$60 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/white-wine.png"
+                alt="Picture of white wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>spice valley rosé</strong></h5>
+            <p>Marlborough</p>
+            <h5><strong>$12.00 - glass<br>$55 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/white-wine.png"
+                alt="Picture of white wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>rameau d'or rosé</strong></h5>
+            <p>Côtes de Provence, France</p>
+            <h5><strong>$65 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/white-wine.png"
+                alt="Picture of white wine"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Bubbles -->
+      <div class="title-left" id="bubbles">
+        <h3>bubbles</h3>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>summer love sparkling riesling</strong></h5>
+            <p>Canterbury</p>
+            <h5><strong>$12.00 - glass<br>$50 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/champagne.png"
+                alt="Picture of Champagne"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>bird in hand sparkling</strong></h5>
+            <p>Adelaide Hills</p>
+            <h5><strong>$13.00 - 200ml</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/champagne.png"
+                alt="Picture of Champagne"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>bandini prosecco</strong></h5>
+            <p>Veneto, Italy</p>
+            <h5><strong>$49 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/champagne.png"
+                alt="Picture of Champagne"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>Laurent-Perrier 'La Cuvée'</strong></h5>
+            <p>France</p>
+            <h5><strong>$29 - glass<br>$110 - bottle</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/champagne.png"
+                alt="Picture of champagne"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Beer -->
+      <div class="title-left" id="beer-cider">
+        <h3>beer & cider</h3>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>tap beer</strong></h5>
+            <p>House brew</p>
+            <h5><strong>$10.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>tap cider</strong></h5>
+            <p>House brew</p>
+            <h5><strong>$12.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>white mischief</strong></h5>
+            <p>Garage Project<br>Sour (2.9%)</p>
+            <h5><strong>$9.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>fugazi</strong></h5>
+            <p>Garage Project<br>Session Lager (2.2%)</p>
+            <h5><strong>$9.50</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>the wolf of washington</strong></h5>
+            <p>Brew Moon<br>APA (5.8%)</p>
+            <h5><strong>$9.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>darkside of the moon</strong></h5>
+            <p>Brew Moon<br>Stout (5.8%)</p>
+            <h5><strong>$9.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>ghost dog</strong></h5>
+            <p>Ghost<br>Pale Ale (6.5%)</p>
+            <h5><strong>$12.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>pernicious weed</strong></h5>
+            <p>Garage Project<br>IPA (8.0%)</p>
+            <h5><strong>$9.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>wellingtonian</strong></h5>
+            <p>Fortune Favours<br>Sour (6.0%)</p>
+            <h5><strong>$9.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="#">
+          <div class="menu-card-child">
+            <h5><strong>absolutely smashing apple cider</strong></h5>
+            <p>Three Boys<br>Cider (5.0%)</p>
+            <h5><strong>$10.00</strong></h5>
+          </div>
+          <div class="menu-card-child">
+            <div class="menu-img-wrapper">
+              <img
+                src="./assets/images/beer.png"
+                alt="Picture of Beer"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+<!-- Cocktails -->
+<div class="title-left" id="cocktails">
+    <h3>cocktails</h3>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>potion of health</strong></h5>
+        <p>Gin, Lemon Juice, Apple Juice, Cranberry Juice</p>
+        <h5><strong>$15.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/potion.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>potion of magic</strong></h5>
+        <p>Rum, Blue Curacao, Pineapple Juice, Lemon Juice</p>
+        <h5><strong>$15.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/potion.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>potion of stamina</strong></h5>
+        <p>Midori, Triple Sec, Lemon Juice</p>
+        <h5><strong>$15.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/potion.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>potion of luck</strong></h5>
+        <p>Bourbon, Lemon, Sugar Syrup</p>
+        <h5><strong>$15.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/potion.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>dark & stormy</strong></h5>
+        <p>Rum, Ginger Beer, Lime, Bitters</p>
+        <h5><strong>$14.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/cocktail.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>espresso martini</strong></h5>
+        <p>Vodka, Coffee, Coffee Liqueur, Crème de Cacao</p>
+        <h5><strong>$16.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/cocktail.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>cosmopolitan</strong></h5>
+        <p>Vodka, Triple Sec, Lime, Cranberry Juice</p>
+        <h5><strong>$15.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/cocktail.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>old fashioned</strong></h5>
+        <p>Whiskey, Sugar, Bitters, Orange Peel</p>
+        <h5><strong>$14.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/cocktail.png"
+            alt="Picture of Cocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- MOCKTAIL -->
+  <div class="title-left" id="mocktails">
+    <h3>mocktails</h3>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>seedlip & tonic</strong></h5>
+        <p>Seedlip Grove 42 Citrus & Tonic</p>
+        <h5><strong>$14.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/mocktail.png"
+            alt="Picture of Mocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>seedlip grove margarita</strong></h5>
+        <p>Seedlip Grove 42 Citrus, Agave Syrup, Lime</p>
+        <h5><strong>$15.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/mocktail.png"
+            alt="Picture of Mocktail"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- Soda -->
+  <div class="title-left" id="soda">
+    <h3>soda</h3>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>house mixed lemon, lime & bitters</strong></h5>
+        <h5><strong>$6.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>elderflower & apple soda</strong></h5>
+        <h5><strong>$6.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>kombucha</strong></h5>
+        <h5><strong>$6.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>coke zero</strong></h5>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>lemonade</strong></h5>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>ginger beer</strong></h5>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+<!-- Juices -->
+<div class="title-left" id="juices">
+    <h3>juices</h3>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>orange</strong></h5>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>apple</strong></h5>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>cranberry</strong></h5>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>pineapple</strong></h5>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/soda.png"
+            alt="Picture of Soda"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- Coffee -->
+  <div class="title-left" id="coffee">
+    <h3>coffee</h3>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>black coffee</strong></h5>
+        <h5><strong>$4.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/coffee.png"
+            alt="Picture of Coffee"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>white coffee</strong></h5>
+        <h5><strong>$4.50 - large<br>$4.00 - small</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/coffee.png"
+            alt="Picture of Coffee"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>hot chocolate</strong></h5>
+        <h5><strong>$4.50 - large<br>$4.00 - small</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/coffee.png"
+            alt="Picture of Coffee"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>chai latte</strong></h5>
+        <h5><strong>$4.50 - large<br>$4.00 - small</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/coffee.png"
+            alt="Picture of Coffee"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+<!-- Iced drinks -->
+<div class="title-left" id="iced-drinks">
+    <h3>iced drinks</h3>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>iced black coffee</strong></h5>
+        <h5><strong>$5.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/frappe.png"
+            alt="Picture of Frappe"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>iced white coffee</strong></h5>
+        <h5><strong>$6.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/frappe.png"
+            alt="Picture of Frappe"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>caramel frappe</strong></h5>
+        <p>Espresso, caramel sauce, condensed milk, topped with cream</p>
+        <h5><strong>$8.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/frappe.png"
+            alt="Picture of Frappe"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>chocolate frappe</strong></h5>
+        <p>Espresso, chocolate sauce, condensed milk, topped with cream</p>
+        <h5><strong>$8.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/frappe.png"
+            alt="Picture of Frappe"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>chocolate frappe</strong></h5>
+        <p>Espresso, chocolate sauce, condensed milk, topped with cream</p>
+        <h5><strong>$8.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/frappe.png"
+            alt="Picture of Frappe"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>vanilla frappe</strong></h5>
+        <p>Espresso, vanilla syrup, condensed milk, topped with cream</p>
+        <h5><strong>$8.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/frappe.png"
+            alt="Picture of Frappe"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- Tea -->
+  <div class="title-left" id="tea">
+    <h3>tea</h3>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>Tea with caffeine</strong></h5>
+        <p>(click to select)</p>
+        <h5><strong>$5.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/tea.png"
+            alt="Picture of Tea"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>Tea without caffeine</strong></h5>
+        <p>(click to select)</p>
+        <h5><strong>$5.00</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/tea.png"
+            alt="Picture of Tea"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="menu-card">
+    <a href="#">
+      <div class="menu-card-child">
+        <h5><strong>lemon, honey & ginger</strong></h5>
+        <p>House made</p>
+        <h5><strong>$4.50</strong></h5>
+      </div>
+      <div class="menu-card-child">
+        <div class="menu-img-wrapper">
+          <img
+            src="./assets/images/tea.png"
+            alt="Picture of Tea"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
 
-
-      <!-- FOOTER -->
-      <div id="footer-shop-loader"></div>
+    <!-- FOOTER -->
+    <div class="filler"></div>
+    <div id="footer-shop-loader"></div>
   </body>
-  </html>
+</html>

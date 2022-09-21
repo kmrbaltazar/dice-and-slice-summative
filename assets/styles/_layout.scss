@@ -19,11 +19,6 @@ $light-blue: #b3daf2;
   outline: 1px solid $main-pink;
 }
 
-// Link mixins
-@mixin link-hover {
-  color: $main-pink;
-}
-
 // Important content
 @mixin important-content {
   background-color: $dark-blue;
@@ -60,19 +55,29 @@ a {
   text-transform: capitalize;
 }
 
+.link-white {
+    color: $main-white;
+    text-decoration: none;
+}
+
 p {
   color: $main-grey;
-  font-size: 14px;
+  font-size: 12px;
+  margin: 10px 0;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4, h5, h6 {
   text-transform: capitalize;
 }
 
-h2 {
+h5 {
+    font-weight: 400;
+}
+
+h2, h3 {
   color: $main-pink;
 }
 
@@ -93,6 +98,7 @@ img {
   width: 100%;
   background-color: $main-blue;
   position: fixed;
+  top: 0;
 
   .header-wrapper {
     width: 80px;
@@ -137,11 +143,11 @@ img {
     flex: 3;
     text-align: center;
     height: 50px;
-
-    a {
-      text-decoration: none;
-    }
   }
+}
+
+.filler {
+    height: 60px;
 }
 
 // Loading page
@@ -175,11 +181,6 @@ img {
 
   h2 {
     color: $main-white;
-  }
-
-  a {
-    color: $main-white;
-    text-decoration: none;
   }
 }
 
@@ -242,11 +243,6 @@ img {
     flex: 2;
   }
 
-  a {
-    color: $main-white;
-    text-decoration: none;
-  }
-
   h2 {
     color: $main-white;
   }
@@ -256,3 +252,86 @@ img {
     font-weight: 400;
   }
 }
+
+// Order food and drinks page
+.page-title-section {
+    margin: 80px 0 10px 0;
+    text-align: center;
+}
+
+.pizza-pic {
+    height: 30vh;
+}
+
+.scroll-menu {
+    background-color: $light-blue;
+    overflow: auto;
+    white-space: nowrap;
+    position: sticky;
+    top: 61.8px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    
+
+    a {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 12px;
+        color: $dark-blue;
+    }
+}
+
+.scroll-menu::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.title-left {
+    margin: 20px 10px;
+
+    h2 {
+        text-transform: uppercase;
+    }
+}
+
+.menu-card a {
+    display: flex;
+    text-align: left !important;
+    margin: 10px auto;
+    border-bottom: 1px solid $main-blue;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $main-grey;
+
+}
+
+.menu-card {
+
+    p {
+        font-style: italic;
+    }
+
+    .menu-card-child:first-child {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+    }
+
+    .menu-img-wrapper {
+        height: 90px;
+
+        img {
+            object-position: 50% 80% !important;
+        }
+    }
+
+    .menu-card-child:last-child {
+        flex: 1;
+    }
+}
+
+
