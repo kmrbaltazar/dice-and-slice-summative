@@ -33,6 +33,11 @@
   .add-cart {
     margin-bottom: 70px;
   }
+  #modal {
+    bottom: 45%;
+    left: 200px;
+    right: 200px;
+  }
 }
 *,
 *::before,
@@ -460,6 +465,53 @@ label.menu-checkbox input:checked + span:before {
   bottom: -1.5px;
 }
 
+.hidden {
+  display: none;
+}
+
+#modal {
+  position: fixed;
+  background-color: #0bbce7;
+  top: 30%;
+  bottom: 30%;
+  left: 40px;
+  right: 40px;
+  border-radius: 10px;
+}
+#modal .relative-parent {
+  position: relative;
+}
+#modal #close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #f2f2f2;
+}
+#modal h4 {
+  text-align: center;
+  color: #f2f2f2;
+  margin: 20px 0;
+}
+#modal button {
+  background-color: #fe7890;
+  color: #f2f2f2;
+  border-radius: 10px;
+  height: 40px;
+  width: 123px;
+  padding: 5px 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+#modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 @media (min-width: 30em) {
   .footer-shop .footer-shop-child:first-child {
     text-align: center;
@@ -491,5 +543,10 @@ label.menu-checkbox input:checked + span:before {
   }
   .add-cart {
     margin-bottom: 70px;
+  }
+  #modal {
+    bottom: 45%;
+    left: 200px;
+    right: 200px;
   }
 }/*# sourceMappingURL=main.css.map */

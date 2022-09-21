@@ -470,6 +470,7 @@ img {
   }
 }
 
+// Ordering menu Checkbox Styling
 label.menu-checkbox {
     font-size: 14px;
     display: flex;
@@ -497,6 +498,50 @@ label.menu-checkbox {
     bottom: -1.5px;
     
 }
+}
+
+// Modal
+.hidden{display: none;}
+#modal{
+    position: fixed;
+    background-color: $main-blue;
+    top: 30%;
+    bottom: 30%;
+    left: 40px;
+    right: 40px;
+    border-radius: 10px;
+
+    .relative-parent {
+        position: relative;
+    }
+
+#close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: $main-white;
+}
+
+h4 {
+    text-align: center;
+    color: $main-white;
+    margin: 20px 0;
+}
+
+button {
+    @include main-button-style;
+    height: 40px;
+    width: 123px;
+    padding: 5px 20px;
+    display: block;
+    margin: 20px auto;
+}
+}
+
+#modal-bg{
+    position: fixed;
+    top: 0;bottom: 0;right: 0;left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 @import "./media.scss";

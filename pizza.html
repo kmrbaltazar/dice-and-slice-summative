@@ -44,6 +44,7 @@
         $("#footer-shop-loader").load("./footer-shop.html");
       });
     </script>
+    <script src="./assets/js/modals.js" defer></script>
     <title>Pizza - Dice & Slice</title>
   </head>
   <body>
@@ -135,7 +136,19 @@
           <p>+</p>
         </div>
       </div>
-        <button><a href="#" class="link-white">add to cart</a></button>
+        <button><a href="#" class="link-white" id="to-click">add to cart</a></button>
+        <div id="modal-bg" class="hidden"></div>
+    <div id="modal" class="hidden">
+        <div class="relative-parent">
+            <span id="close">x</span>
+        </div>
+        <h4>Added to cart!</h4>
+        <div>
+            <button><a href="./order.html" class="link-white">Add items</a></button>
+            <button><a href="#" class="link-white">View Cart</a></button>
+            <button><a href="#" class="link-white">Checkout</a></button>
+        </div>
+    </div>
     </section>
 
     <!-- FOOTER -->
