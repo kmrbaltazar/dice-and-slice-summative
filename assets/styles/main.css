@@ -1,15 +1,30 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@media (max-width: 21.625em) {
+  .landing-menu h2 {
+    font-size: 19px;
+  }
+  .landing-menu h4 {
+    font-size: 14px;
+  }
+}
 @media (min-width: 30em) {
   .footer-shop .footer-shop-child:first-child {
     text-align: center;
   }
+  .intro {
+    background-position: 90% 50%;
+  }
   .intro .intro-wrapper {
     width: 70vw;
+    margin-bottom: 70px;
   }
-  .intro p {
+  .intro .intro-wrapper p {
     font-size: 16px !important;
+  }
+  .intro .intro-wrapper strong {
+    font-size: 24px;
   }
   .landing-menu {
     gap: 5vh;
@@ -135,6 +150,9 @@ img {
 .footer-shop .footer-shop-child:first-child {
   flex: 1;
 }
+.footer-shop .footer-shop-child:first-child a {
+  text-decoration: underline;
+}
 .footer-shop .footer-shop-child:nth-child(2) .cart-wrapper {
   width: 30px;
 }
@@ -191,7 +209,7 @@ img {
   height: 35vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/exterior-photo.png");
   background-size: cover;
-  background-position: 90% center;
+  background-position: 90% 75%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -210,6 +228,11 @@ img {
 .intro .intro-wrapper p {
   color: #f2f2f2;
   font-size: 12px;
+}
+.intro .intro-wrapper strong {
+  color: #fe7890;
+  font-weight: 800;
+  font-size: 16px;
 }
 
 .landing-menu {
@@ -260,7 +283,7 @@ img {
 }
 
 .scroll-menu {
-  background-color: #b3daf2;
+  background-color: #0aa1c7;
   overflow: auto;
   white-space: nowrap;
   position: -webkit-sticky;
@@ -273,9 +296,9 @@ img {
   display: inline-block;
   text-align: center;
   padding: 15px 15px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #076379;
+  font-weight: 560;
+  font-size: 15px;
+  text-decoration: underline;
 }
 
 .scroll-menu::-webkit-scrollbar {
@@ -463,6 +486,7 @@ label.menu-checkbox input:checked + span:before {
   content: "✓";
   position: absolute;
   bottom: -1.5px;
+  top: -0.2px;
 }
 
 .hidden {
@@ -502,6 +526,9 @@ label.menu-checkbox input:checked + span:before {
   display: block;
   margin: 20px auto;
 }
+#modal button a {
+  font-weight: 600;
+}
 
 #modal-bg {
   position: fixed;
@@ -512,15 +539,30 @@ label.menu-checkbox input:checked + span:before {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 21.625em) {
+  .landing-menu h2 {
+    font-size: 19px;
+  }
+  .landing-menu h4 {
+    font-size: 14px;
+  }
+}
 @media (min-width: 30em) {
   .footer-shop .footer-shop-child:first-child {
     text-align: center;
   }
+  .intro {
+    background-position: 90% 50%;
+  }
   .intro .intro-wrapper {
     width: 70vw;
+    margin-bottom: 70px;
   }
-  .intro p {
+  .intro .intro-wrapper p {
     font-size: 16px !important;
+  }
+  .intro .intro-wrapper strong {
+    font-size: 24px;
   }
   .landing-menu {
     gap: 5vh;

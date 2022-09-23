@@ -128,6 +128,10 @@ img {
 
   .footer-shop-child:first-child {
     flex: 1;
+
+    a {
+        text-decoration: underline;
+    }
   }
 
   .footer-shop-child:nth-child(2) {
@@ -196,7 +200,7 @@ img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/exterior-photo.png");
   background-size: cover;
-  background-position: 90% center;
+  background-position: 90% 75%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -216,7 +220,15 @@ img {
       color: $main-white;
       font-size: 12px;
     }
+
+    strong {
+        color: $main-pink;
+        font-weight: 800;
+        font-size: 16px;
+    }
   }
+
+  
 }
 
 .landing-menu {
@@ -274,7 +286,7 @@ img {
 }
 
 .scroll-menu {
-  background-color: $light-blue;
+  background-color: #0aa1c7;
   overflow: auto;
   white-space: nowrap;
   position: sticky;
@@ -286,9 +298,10 @@ img {
     display: inline-block;
     text-align: center;
     padding: 15px 15px;
-    font-weight: 500;
-    font-size: 14px;
-    color: $dark-blue;
+    font-weight: 560;
+    font-size: 15px;
+    // color: $dark-blue;
+    text-decoration: underline;
   }
 }
 
@@ -496,6 +509,7 @@ label.menu-checkbox {
     content: '\2713';
     position: absolute;
     bottom: -1.5px;
+    top: -0.2px;
     
 }
 }
@@ -535,6 +549,10 @@ button {
     padding: 5px 20px;
     display: block;
     margin: 20px auto;
+    
+    a {
+        font-weight: 600;
+    }
 }
 }
 
@@ -543,5 +561,8 @@ button {
     top: 0;bottom: 0;right: 0;left: 0;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 @import "./media.scss";

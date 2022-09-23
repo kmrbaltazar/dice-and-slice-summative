@@ -1,3 +1,18 @@
+// Smaller mobile phones
+@media (max-width: 21.625em) {
+
+    .landing-menu {
+        h2 {
+            font-size: 19px;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+    }
+
+}
+
 // Tablet
 @media (min-width: 30em) {
 .footer-shop {
@@ -7,13 +22,22 @@
 }
 
   .intro {
+    background-position: 90% 50%;
+
     .intro-wrapper {
       width: 70vw;
+      margin-bottom: 70px;
+
+      p {
+        font-size: 16px !important;
+      }
+
+      strong {
+          font-size: 24px;
+      }
     }
 
-    p {
-      font-size: 16px !important;
-    }
+    
   }
 
   .landing-menu {
